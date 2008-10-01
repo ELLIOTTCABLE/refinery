@@ -93,7 +93,6 @@ pull request once you've committed your changes.
 
 Links
 -----
-
 - [GitHub](http://github.com/elliottcable/refinery "Refinery on GitHub") is the
     project's primary repository host, and currently also the project's home
     page
@@ -106,6 +105,12 @@ Links
     an alternative repository host
 - [repo.or.cz](http://repo.or.cz/w/refinery.git "Refinery on repo.or.cz") is
     an alternative repository host
+
+Attribution
+-----------
+The Sing extension was contributed by [John Mair][banisterfiend].
+
+[banisterfiend]: <http://banisterfiend.wordpress.com/> "Banisterfiend (John Mair)'s Weblog"
 
 License
 -------
