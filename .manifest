@@ -2,6 +2,7 @@ ext/sing/extconf.rb
 ext/sing/sing.c
 lib/refinery/core_ext/class.rb
 lib/refinery.rb
+LICENSE.text
 Rakefile.rb
 README.markdown
 spec/refinery/core_ext/class_spec.rb
