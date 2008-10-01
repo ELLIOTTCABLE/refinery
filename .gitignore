@@ -1,0 +1,9 @@
+meta/
+.yardoc
+lib/*.so
+lib/*.bundle
+ext/**/*.o
+ext/**/*.so
+ext/**/*.bundle
+ext/**/Makefile
+pkg/
