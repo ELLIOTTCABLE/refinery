@@ -12,7 +12,7 @@ authors:
 autorequire: 
 bindir: bin
 
-date: 2008-10-01 00:00:00 -08:00
+date: 2008-10-12 00:00:00 -08:00
 default_executable: 
 dependencies: 
 - !ruby/object:Gem::Dependency 
@@ -76,13 +76,17 @@ extra_rdoc_files:
 - ext/sing/extconf.rb
 - ext/sing/sing.c
 - lib/refinery/core_ext/class.rb
+- lib/refinery/core_ext/object.rb
 - lib/refinery.rb
+- LICENSE.text
 - README.markdown
 files: 
 - ext/sing/extconf.rb
 - ext/sing/sing.c
 - lib/refinery/core_ext/class.rb
+- lib/refinery/core_ext/object.rb
 - lib/refinery.rb
+- LICENSE.text
 - Rakefile.rb
 - README.markdown
 - spec/refinery/core_ext/class_spec.rb
