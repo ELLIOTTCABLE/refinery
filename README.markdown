@@ -79,6 +79,9 @@ as well as [rake][]:
 
     git clone git://github.com/elliottcable/refinery.git
     cd refinery
+    # If you've ever done this before, you don't need to do it now - see http://gems.github.com
+    gem sources -a http://gems.github.com
+    sudo gem install elliottcable-echoe # You'll be asked for your account password.
     rake install # You'll be asked for your account password.
 
 [RubyGems]: <http://rubyforge.org/projects/rubygems/> "RubyGems - Ruby package manager"
