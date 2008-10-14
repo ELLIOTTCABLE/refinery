@@ -14,14 +14,16 @@ begin
   task :package => :'package:install'
   task :manifest => :'package:manifest'
   namespace :package do
-    Echoe.new('refinery', Refinery::Version) do |g|
+    Echoe.new('refinery', Refinery::Version) do |g|; g.name = 'Refinery'
       g.project = 'refinery'
       g.author = ['elliottcable']
       g.email = ['Refinery@elliottcable.com']
       g.summary = 'Mmmmagic'
       g.url = 'http://github.com/elliottcable/refinery'
-      g.development_dependencies = ['echoe >=3.0.1', 'rspec', 'rcov', 'yard', 'stringray']
+      g.development_dependencies = ['elliottcable-echoe >= 3.0.2', 'rspec', 'rcov', 'yard', 'stringray']
       g.manifest_name = '.manifest'
+      g.retain_gemspec = true
+      g.rakefile_name = 'Rakefile.rb'
       g.ignore_pattern = /^\.git\/|^meta\/|\.gemspec/
     end
   
@@ -32,18 +34,10 @@ begin
         puts "\nThe library files are present"
       end
     end
-
-    task :copy_gemspec => [:package] do
-      pkg = Dir['pkg/*'].select {|dir| File.directory? dir}.last
-      mv File.join(pkg, pkg.gsub(/^pkg\//,'').gsub(/\-\d+$/,'.gemspec')), './'
-    end
-
-    desc 'builds a gemspec as GitHub wants it'
-    task :gemspec => [:package, :copy_gemspec, :clobber_package]
   end
   
 rescue LoadError
-  desc 'You need the `echoe` gem to package Refinery'
+  desc 'You need the `elliottcable-echoe` gem to package Refinery'
   task :package
 end
 
@@ -134,7 +128,7 @@ end
 
 desc 'Check everything over before commiting'
 task :aok => [:'documentation:generate', :'documentation:open',
-              :'package:manifest', :'package:gemspec', :'package:compile',
+              :'package:manifest', :'package:package', :'package:compile',
               :'coverage:run', :'coverage:open', :'coverage:verify']
 
 task :ci => [:'documentation:generate', :'coverage:run', :'coverage:verify']
