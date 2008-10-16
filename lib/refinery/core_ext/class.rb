@@ -1,9 +1,4 @@
-require 'eigen'
-
 class Class
-  # Pulls in #eigen?
-  include Eigen
-  
   ##
   # Lists of all instances of this class
   # 

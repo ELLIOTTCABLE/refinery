@@ -1,3 +1,4 @@
+require 'eigen'
 require 'refinery/core_ext/object'
 require 'refinery/core_ext/class'
 
