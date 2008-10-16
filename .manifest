@@ -1,5 +1,5 @@
-ext/sing/extconf.rb
-ext/sing/sing.c
+ext/eigen/eigen.c
+ext/eigen/extconf.rb
 lib/refinery/core_ext/class.rb
 lib/refinery/core_ext/object.rb
 lib/refinery.rb
