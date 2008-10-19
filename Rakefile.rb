@@ -121,9 +121,13 @@ end
 # =========
 # = Other =
 # =========
-desc 'Removes all meta producs'
+desc 'Removes all producs'
 task :clobber do
-  `rm -rf #{File.expand_path(File.join( File.dirname(__FILE__), 'meta' ))}`
+  File.open '.gitignore' do |gitignore|
+    gitignore.each_line do |glob|
+      `rm -rf #{File.expand_path(File.join( File.dirname(__FILE__), glob ))}`
+    end
+  end
 end
 
 desc 'Check everything over before commiting'
