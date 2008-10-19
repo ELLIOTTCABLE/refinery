@@ -1,4 +1,5 @@
 require 'eigen'
+require 'defacto'
 require 'refinery/core_ext/object'
 require 'refinery/core_ext/class'
 

@@ -1,3 +1,5 @@
+ext/defacto/defacto.c
+ext/defacto/extconf.rb
 ext/eigen/eigen.c
 ext/eigen/extconf.rb
 lib/refinery/core_ext/class.rb
@@ -7,6 +9,7 @@ LICENSE.text
 Rakefile.rb
 README.markdown
 spec/refinery/core_ext/class_spec.rb
+spec/refinery/core_ext/object_spec.rb
 spec/refinery_spec.rb
 spec/spec_helper.rb
 .manifest

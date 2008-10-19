@@ -13,6 +13,7 @@ begin
   
   task :package => :'package:install'
   task :manifest => :'package:manifest'
+  task :compile => :'package:compile'
   namespace :package do
     Echoe.new('refinery', Refinery::Version) do |g|; g.name = 'Refinery'
       g.project = 'refinery'
@@ -21,6 +22,7 @@ begin
       g.summary = 'Mmmmagic'
       g.url = 'http://github.com/elliottcable/refinery'
       g.development_dependencies = ['elliottcable-echoe >= 3.0.2', 'rspec', 'rcov', 'yard', 'stringray']
+      g.extension_pattern = 'ext/**/extconf.rb'
       g.manifest_name = '.manifest'
       g.retain_gemspec = true
       g.rakefile_name = 'Rakefile.rb'
