@@ -55,7 +55,7 @@ begin
   task :coverage => :'coverage:run'
   namespace :coverage do
     Spec::Rake::SpecTask.new(:run) do |t|
-      t.spec_opts = ["--format", "specdoc"]
+      t.spec_opts = ["--format", "nested"]
       t.spec_opts << "--colour" unless ENV['CI']
       t.spec_files = Dir['spec/**/*_spec.rb'].sort
       t.libs = ['lib']
