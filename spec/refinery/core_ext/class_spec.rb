@@ -29,4 +29,15 @@ describe Class do
     end
     
   end
+  
+  describe '#defacto_super' do
+    
+    it 'should return the superclass of the class' do
+      @subclass = Class.new(@class)
+      
+      @class.defacto_super.should == @class.superclass
+      @subclass.defacto_super.should == @subclass.superclass
+    end
+    
+  end
 end

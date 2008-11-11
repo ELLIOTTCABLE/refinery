@@ -6,12 +6,12 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 1.2") if s.respond_to? :required_rubygems_version=
   s.authors = ["elliottcable"]
-  s.date = %q{2008-10-15}
+  s.date = %q{2008-11-10}
   s.description = %q{Mmmmagic}
   s.email = ["Refinery@elliottcable.com"]
-  s.extensions = ["ext/eigen/extconf.rb"]
-  s.extra_rdoc_files = ["ext/eigen/eigen.c", "ext/eigen/extconf.rb", "lib/refinery/core_ext/class.rb", "lib/refinery/core_ext/object.rb", "lib/refinery.rb", "LICENSE.text", "README.markdown"]
-  s.files = ["ext/eigen/eigen.c", "ext/eigen/extconf.rb", "lib/refinery/core_ext/class.rb", "lib/refinery/core_ext/object.rb", "lib/refinery.rb", "LICENSE.text", "Rakefile.rb", "README.markdown", "spec/refinery/core_ext/class_spec.rb", "spec/refinery_spec.rb", "spec/spec_helper.rb", ".manifest", "refinery.gemspec"]
+  s.extensions = ["ext/defacto/extconf.rb", "ext/eigen/extconf.rb"]
+  s.extra_rdoc_files = ["ext/defacto/defacto.c", "ext/defacto/extconf.rb", "ext/eigen/eigen.c", "ext/eigen/extconf.rb", "lib/refinery/core_ext/class.rb", "lib/refinery/core_ext/object.rb", "lib/refinery.rb", "LICENSE.text", "README.markdown"]
+  s.files = ["ext/defacto/defacto.c", "ext/defacto/extconf.rb", "ext/eigen/eigen.c", "ext/eigen/extconf.rb", "lib/refinery/core_ext/class.rb", "lib/refinery/core_ext/object.rb", "lib/refinery.rb", "LICENSE.text", "Rakefile.rb", "README.markdown", "spec/refinery/core_ext/class_spec.rb", "spec/refinery/core_ext/object_spec.rb", "spec/refinery_spec.rb", "spec/spec_helper.rb", ".manifest", "refinery.gemspec"]
   s.has_rdoc = true
   s.homepage = %q{http://github.com/elliottcable/refinery}
   s.rdoc_options = ["--line-numbers", "--inline-source", "--title", "Refinery", "--main", "README.markdown"]

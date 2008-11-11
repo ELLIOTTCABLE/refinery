@@ -11,16 +11,14 @@ describe Object do
     end
   end
   
-  describe '#primary_ancestor' do
+  describe '#defacto_class' do
     it 'should return the object\'s class when no singleton is created' do
-      @object.primary_ancestor.should == Object
+      @object.defacto_class.should == Object
     end
     
-    it 'should return the object\'s class when no singleton is created' do
-      class << @object
-        
-      end
-      @object.primary_ancestor.should == @object.singleton
+    it 'should return the object\'s singleton when a singleton is created' do
+      singleton = @object.singleton
+      @object.defacto_class.should == singleton
     end
   end
 end
