@@ -7,7 +7,7 @@ describe Refinery do
   end
   
   describe '#refine_method' do
-    describe '- instance method' do
+    describe '- on an instance method' do
       
       it 'should still work ordinarily when defined before refining' do
         class Something
@@ -87,7 +87,7 @@ describe Refinery do
       
     end
     
-    describe '- singleton method' do
+    describe '- on a singleton method' do
       
       it 'should still work ordinarily when defined before refining' do
         class Something; class << self
