@@ -6,7 +6,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 1.2") if s.respond_to? :required_rubygems_version=
   s.authors = ["elliottcable"]
-  s.date = %q{2008-11-10}
+  s.date = %q{2008-11-17}
   s.description = %q{Mmmmagic}
   s.email = ["Refinery@elliottcable.com"]
   s.extensions = ["ext/defacto/extconf.rb", "ext/eigen/extconf.rb"]

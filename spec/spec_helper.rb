@@ -3,4 +3,5 @@ require 'refinery'
 
 # Require spec here, for things like autotest and rdebug that aren't running
 # using the Rakefile.
+require 'rubygems'
 require 'spec'

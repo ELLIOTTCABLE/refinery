@@ -8,6 +8,9 @@ module Refinery
   
   # This refines an instance method named 'meth'.
   def refine_method meth
+    (@@refined_methods ||= Hash.new)[meth] = Array.new
+    
     
   end
+  
 end
